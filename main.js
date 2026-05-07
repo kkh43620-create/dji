@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // إنشاء عنصر الصورة
     const logoImg = document.createElement('img');
-    logoImg.src = "photo/logo.png"; // المسار الذي حددته
+    logoImg.src = "logo.png"; // المسار الذي حددته
     logoImg.alt = "شعار رحبة حمص 812";
 
     // تنسيق اللوغو (الزاوية العلوية اليمنى)
