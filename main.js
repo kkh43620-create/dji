@@ -114,7 +114,7 @@ window.addEventListener('load', function() {
 
 
 
-/*
+
 // الانتظار حتى تحميل الصفحة بالكامل
 document.addEventListener("DOMContentLoaded", function() {
     
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function() {
     logoLink.appendChild(logoImg);
     document.body.appendChild(logoLink);
 });
-*/
+
 
 /*
 document.addEventListener("DOMContentLoaded", function() {
