@@ -114,39 +114,40 @@ window.addEventListener('load', function() {
 
 
 
-/*
 // الانتظار حتى تحميل الصفحة بالكامل
 document.addEventListener("DOMContentLoaded", function() {
-    
-    // إنشاء عنصر الرابط
-    const logoLink = document.createElement('a');
-    logoLink.href = "index.html"; // يوجه للصفحة الرئيسية، أو استبدله بـ window.location.href لإعادة التحميل
-    
-    // إنشاء عنصر الصورة
-    const logoImg = document.createElement('img');
-    logoImg.src = "logo.png"; // المسار الذي حددته
-    logoImg.alt = "شعار رحبة حمص 812";
+    // شرط: إذا كان الجهاز لابتوب أو أكبر (الشاشة أوسع من أو تساوي 992 بكسل)
+    if (window.innerWidth >= 992) {
+        // إنشاء عنصر الرابط
+        const logoLink = document.createElement('a');
+        logoLink.href = "index.html"; // يوجه للصفحة الرئيسية
 
-    // تنسيق اللوغو (الزاوية العلوية اليمنى)
-    logoImg.style.cssText = `
-        position: absolute;
-        top: 20px;
-        right: 15px;
-        width: 150px;
-        z-index: 1000;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    `;
+        // إنشاء عنصر الصورة
+        const logoImg = document.createElement('img');
+        logoImg.src = "logo.png";
+        logoImg.alt = "شعار رحبة حمص 812";
 
-    // تأثير بسيط عند مرور الماوس (يكبر قليلاً)
-    logoImg.onmouseover = () => logoImg.style.transform = "scale(1.1)";
-    logoImg.onmouseout = () => logoImg.style.transform = "scale(1)";
+        // تنسيق اللوغو (الزاوية العلوية اليمنى)
+        logoImg.style.cssText = `
+            position: absolute;
+            top: 20px;
+            right: 15px;
+            width: 150px;
+            z-index: 1000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        `;
 
-    // دمج العناصر وإضافتها للصفحة
-    logoLink.appendChild(logoImg);
-    document.body.appendChild(logoLink);
+        // تأثير بسيط عند مرور الماوس (يكبر قليلاً)
+        logoImg.onmouseover = () => logoImg.style.transform = "scale(1.1)";
+        logoImg.onmouseout = () => logoImg.style.transform = "scale(1)";
+
+        // دمج العناصر وإضافتها للصفحة
+        logoLink.appendChild(logoImg);
+        document.body.appendChild(logoLink);
+    }
 });
-*/
+
 
 /*
 document.addEventListener("DOMContentLoaded", function() {
